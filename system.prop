@@ -1,3 +1,6 @@
+# Dex2Oat
+ro.sys.fw.dex2oat_thread_count=8
+
 # fastbootd
 ro.fastbootd.available=true
 
