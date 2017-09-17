@@ -1,3 +1,7 @@
+# ART
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+
 # Dex2Oat
 ro.sys.fw.dex2oat_thread_count=8
 
