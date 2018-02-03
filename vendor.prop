@@ -133,9 +133,6 @@ vendor.video.disable.ubwc=1
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Network manager daemon
 ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
