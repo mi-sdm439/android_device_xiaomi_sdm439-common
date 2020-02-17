@@ -166,6 +166,9 @@ static void workaround_cts_properties() {
 	for (int i = 0; cts_late_prop_key[i]; ++i) {
 		property_override(cts_late_prop_key[i], cts_late_prop_val[i]);
 	}
+	// Xiaomi cross region flash
+	property_override("ro.boot.hwc", "GLOBAL");
+	property_override("ro.boot.hwcountry", "GLOBAL");
 }
 
 void load_mods()
