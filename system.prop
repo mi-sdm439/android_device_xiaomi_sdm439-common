@@ -1,2 +1,5 @@
+# fastbootd
+ro.fastbootd.available=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
