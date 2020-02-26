@@ -2,5 +2,8 @@
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.loglevel=0
 
+# fastbootd
+ro.fastbootd.available=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
