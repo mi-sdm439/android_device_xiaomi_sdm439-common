@@ -150,6 +150,9 @@ ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 persist.vendor.data.mode=concurrent
 
+# Perf
+ro.vendor.perf.scroll_opt=true
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.dbg.volte_avail_ovr=1
