@@ -492,4 +492,7 @@
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
      <bool name="config_showNavigationBar">true</bool>
+
+    <!-- Whether the device show_vendor_mismatch_message -->
+    <bool name="config_show_vendor_mismatch_message">false</bool>
 </resources>
