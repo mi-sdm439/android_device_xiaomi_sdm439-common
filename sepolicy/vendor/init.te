@@ -4,3 +4,6 @@ domain_auto_trans(init, vendor_charger_exec, vendor_charger)
 
 # Firmware
 allow init firmware_file:filesystem getattr;
+
+# LED
+allow init sysfs_leds:lnk_file r_file_perms;
