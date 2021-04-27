@@ -1,3 +1,6 @@
 allow init proc_boot_reason:file r_file_perms;
 allow init sysfs_fm_lan:file rw_file_perms;
 domain_auto_trans(init, vendor_charger_exec, vendor_charger)
+
+# Firmware
+allow init firmware_file:filesystem getattr;
