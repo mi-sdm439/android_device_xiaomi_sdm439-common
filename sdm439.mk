@@ -385,6 +385,8 @@ PRODUCT_COPY_FILES += \
 
 # ROM: CherishOS
 ifneq ($(wildcard vendor/cherish),)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-cherish
+
 WITH_GMS ?= true
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false

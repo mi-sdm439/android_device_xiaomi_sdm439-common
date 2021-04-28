@@ -4,3 +4,6 @@ get_prop(system_server, userspace_reboot_exported_prop)
 # Input devices
 r_dir_file(system_server, vendor_idc_file);
 r_dir_file(system_server, vendor_keylayout_file);
+
+# Smart charging
+allow system_server sysfs_battery_supply:file { getattr open write };
