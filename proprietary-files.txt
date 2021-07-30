@@ -16,20 +16,21 @@ vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
-# ADSP modules
-vendor/lib/rfsa/adsp/dirac_resource.dar
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_stats.so
-vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so
-vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdirac-capiv2.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
+# ADSP modules - from olive
+vendor/lib/rfsa/adsp/dirac_resource.dar|cd71f1a846ae561eea40db9c2deee698d296e403
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
+vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
+vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
+vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|944169db3ac67056b92ef4f850f69346958370b5
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin|1b6114eeefa29e36f10571ae5dde4ba84625982c
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin|eeda10edb9cf93d20cbe9a4ed77dd0eeef81efab
+vendor/lib/rfsa/adsp/misound_res.bin|f9b70e341815fb9c3ea9a0d3a248efd315389f9c
 
 # Audio
 vendor/bin/audioflacapp
@@ -101,6 +102,12 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+
+# Camera HIDL - from olive
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib64/camera.device@3.2-impl.so
 
 # Camera firmware
 vendor/firmware/cpp_firmware_v1_10_0.fw
@@ -208,8 +215,8 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libfastrpc_utf_stub.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
-# Charger
-vendor/bin/hvdcp_opti
+# Charger - from olive
+vendor/bin/hvdcp_opti|a47c1adc0fa14f4b07330fd813777a6135e93a30
 
 # DPM
 framework/tcmclient.jar
@@ -372,7 +379,7 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Graphics firmware
+# Graphics firmware - from olive
 vendor/firmware/a506_zap.b00
 vendor/firmware/a506_zap.b01
 vendor/firmware/a506_zap.b02
@@ -699,19 +706,19 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Sensors
-vendor/bin/sensors.qti
-vendor/etc/sensors/hals.conf
-vendor/lib/hw/activity_recognition.msm8953.so:vendor/lib/hw/activity_recognition.msm8937.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/libsensor_user_cal.so
-vendor/lib/sensors.ssc.so
-vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8937.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/libsensor_user_cal.so
-vendor/lib64/sensors.ssc.so
+# Sensors - from olive
+vendor/bin/sensors.qti|3bf3798e2e1d46b0b8964ec859afa81bd5a8d3fe
+vendor/lib64/hw/activity_recognition.msm8937.so|dfe3b07f7306f57c8ecf911bed7ce5e7cbb969b1
+vendor/lib64/libsensor1.so|300b3245ae2f45f51cc27324572d84d36412ae64
+vendor/lib64/libsensor_reg.so|f5da84c560b96d48a2bbeb6f2f94bb66f0c7a467
+vendor/lib64/sensors.ssc.so|b55816be99793e02a2e75462fa92842679b401bd
+vendor/lib/hw/activity_recognition.msm8937.so|5c002529f8b9f1b1ee0b4f93216f03251c6ee849
+vendor/lib/libsensor1.so|0b321ef1824ce196eec15c51a10def26e092a895
+vendor/lib/libsensor_reg.so|4853605f7cb1cd01e997527b560e753cdfa47f11
+vendor/lib/sensors.ssc.so|b45c2bd8c0314088f8a0f22cb6fa39f9b2205bd0
+
+# Sensor configs - from olive
+vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 
 # Thermal
 vendor/bin/thermal-engine
@@ -745,5 +752,5 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 
-# Wi-Fi
-vendor/bin/wcnss_service
+# Wi-Fi - from olive
+vendor/bin/wcnss_service|42d6db361ceacb15eb6560cdc91dbda87ab7f7c5
