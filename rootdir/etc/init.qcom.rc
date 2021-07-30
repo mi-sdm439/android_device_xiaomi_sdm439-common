@@ -390,6 +390,7 @@ on post-fs-data
     mkdir /data/vendor/tui 0700 system system
 
 on property:hw.fm.init=*
+    write /sys/class/fm/fm_lan_enable/lan_enable ${hw.fm.init}
     write /sys/module/radio_iris_transport/parameters/fmsmd_set ${hw.fm.init}
 
 service iop /system/vendor/bin/iop
