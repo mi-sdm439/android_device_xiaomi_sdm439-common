@@ -20,7 +20,7 @@ on early-boot
 
     chown system system /sys/class/leds/button-backlight/brightness
 
-service vendor.light-xiaomi_msm8953 /vendor/bin/hw/android.hardware.lights-service.xiaomi_msm8953
+service vendor.light-xiaomi_sdm439 /vendor/bin/hw/android.hardware.lights-service.xiaomi_sdm439
     class hal
     user system
     group system
