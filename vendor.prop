@@ -53,16 +53,16 @@ ro.qualcomm.bt.hci_transport=smd
 ro.kernel.ebpf.supported=1
 
 # Camera
-camera.display.lmax=1280x720
-camera.display.umax=1920x1080
-camera.hal1.packagelist=com.skype.raider,com.google.android.talk
-camera.lowpower.record.enable=1
-media.camera.ts.monotonic=1
-persist.camera.gyro.disable=0
-persist.camera.isp.clock.optmz=0
-persist.camera.stats.test=5
-persist.vendor.qti.telephony.vt_cam_interface=1
-vidc.enc.dcvs.extra-buff-count=2
+persist.camera.privapp.list=org.codeaurora.snapcam
+persist.sys.camera.camera2=true
+persist.vendor.camera.display.lmax=1280x720
+persist.vendor.camera.display.umax=1920x1080
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam
+persist.vendor.camera.stats.test=5
+vendor.camera.aux.packagelist1=com.huaqin.cameraautotest,com.xiaomi.cameratools,com.android.camera
+vendor.camera.aux.packagelist2=com.mi.AutoTest
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.qualcomm.qti.qmmi,com.huaqin.factory,com.westalgo.calibration
+vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk
 
 # Charger
 ro.charger.disable_init_blank=true
@@ -173,6 +173,9 @@ service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 vendor.service.qti.ims.enabled=1
+
+# Sensor
+ro.vendor.sensors.pseudo_gyro=true
 
 # Time Services
 persist.timed.enable=true
