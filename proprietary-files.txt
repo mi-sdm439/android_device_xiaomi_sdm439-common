@@ -662,6 +662,30 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
+# Power-off charging daemon - from olive and moved to vendor
+vendor/bin/chargeonlymode|03d5d4003a405d8ffdd3a4ced985ef09872aaeee
+vendor/lib64/libsuspend.so|0f88514533dcb9a7697fa3f73b4e085ef56dd0d9
+vendor/res/charger/0.png|5d9d7ae8afa81bf22b08768f8558e87408ecb733
+vendor/res/charger/10.png|85ccc6195afe7d4d3c455e2a30723cd5a77df693
+vendor/res/charger/1.png|d50cc0033c8277afa7e68c166d86d6517b714467
+vendor/res/charger/2.png|adecd6cc18e369348c88ed63255286d5a7a7bbf1
+vendor/res/charger/3.png|e5e4c973e0780e8d1279bfdd240e49843efd1800
+vendor/res/charger/4.png|ee57974a5f11ab149255a9385c7ef28b81a8a4d2
+vendor/res/charger/5.png|f663294ee8626e0575c23c6ac4bc0b0d7df47088
+vendor/res/charger/6.png|c36f72140558576ee99c097e994b36d03bf7931f
+vendor/res/charger/7.png|af03c27ada7435ed5a34ab54ca6ff06373f2576b
+vendor/res/charger/8.png|1ffc66ab3ebcf17299b9134036a7f83601965577
+vendor/res/charger/9.png|6fc334ab4f47275a5e64f71f0260aba1ccf17918
+vendor/res/charger/Battery_0.png|835112f235ef1f97f698b0dd8f79d9ecfaed55ea
+vendor/res/charger/battery_fail.png|0e65ec2d5f21ecf03d3ea7e1c1b821a7ebee1728
+vendor/res/charger/Battery_green1.png|d623e81279d06debe62c0a0b676c4f5290191efc
+vendor/res/charger/Battery_green2.png|04f8122bf33c0d746ad1a6ae6b3bb02fbfde4742
+vendor/res/charger/Battery_green3.png|6ac8655e510d1f7bae319f00757f5002bdd49f2a
+vendor/res/charger/Battery.png|09c1fad4ff09b1b20991e800768985c26c408d23
+vendor/res/charger/Battery_red1.png|e7dc9d0638e3405594f2129b85129efb345e4c19
+vendor/res/charger/Battery_red2.png|2f9716f028bff9ac6d44ec3eca1f5e06fa7d0e01
+vendor/res/charger/battery_scale.png|84066970c9fe65be5e5e752e225ce07698147a36
+
 # QMI
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
