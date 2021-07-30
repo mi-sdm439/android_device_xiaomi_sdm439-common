@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter daisy mido sakura tissot vince ysl,$(TARGET_DEVICE)),)
+ifneq ($(filter pine olives,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
