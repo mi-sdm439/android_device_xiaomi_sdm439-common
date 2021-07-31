@@ -1,6 +1,9 @@
 # Boot reason
 genfscon proc  /sys/kernel/boot_reason   u:object_r:proc_boot_reason:s0
 
+# DT2W
+genfscon proc /sys/dev/dt2w u:object_r:dt2w_ctrl:s0
+
 # FM
 genfscon sysfs /class/fm/fm_lan_enable/lan_enable u:object_r:sysfs_fm_lan:s0
 
