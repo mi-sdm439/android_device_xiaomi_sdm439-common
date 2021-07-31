@@ -78,6 +78,9 @@ function blob_fixup() {
         vendor/lib64/libril-qc-hal-qmi.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
             ;;
+        vendor/lib/hw/camera.msm8937.so)
+            "${PATCHELF}" --remove-needed "libwa_megface.so" "${2}"
+            ;;
     esac
 }
 
