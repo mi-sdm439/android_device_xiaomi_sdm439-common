@@ -1,0 +1,20 @@
+extern "C" {
+	void _ZN2wa3Dof12setCalibDataEPKci() {}
+	void _ZN2wa3Dof15getWidthOfDepthEv() {}
+	void _ZN2wa3Dof16getHeightOfDepthEv() {}
+	void _ZN2wa3Dof3runEiifRNS_5ImageE() {}
+	void _ZN2wa3Dof8getDepthERNS_5ImageE() {}
+	void _ZN2wa3Dof8setFacesEPK5WFaceiNS_5Image8RotationE() {}
+	void _ZN2wa3Dof8setModelEPKcPKvi() {}
+	void _ZN2wa3Dof9setImagesERNS_5ImageES2_() {}
+	void _ZN2wa3DofC1Ev() {}
+	void _ZN2wa3DofD1Ev() {}
+	void _ZN2wa5Image10setExifIsoEi() {}
+	void _ZN2wa5Image10setImageWHEii() {}
+	void _ZN2wa5Image13setExifAeGainEf() {}
+	void _ZN2wa5Image14setExifExpTimeEf() {}
+	void _ZN2wa5Image17setExifModuleInfoEPc() {}
+	void _ZN2wa5ImageC1EiiPvNS0_9ImageTypeENS0_8DataTypeENS0_8RotationE() {}
+	void _ZN2wa5ImageD1Ev() {}
+	void mgb_get_extern_c_opr_api_versioned() {}
+}
