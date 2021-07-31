@@ -81,6 +81,9 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc)
             sed -i 's|3|4|g' "${2}"
             ;;
+        vendor/lib/hw/camera.msm8937.so)
+            "${PATCHELF}" --remove-needed "libwa_megface.so" "${2}"
+            ;;
     esac
 }
 
