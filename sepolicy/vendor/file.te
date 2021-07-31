@@ -4,6 +4,9 @@ type proc_boot_reason, fs_type, proc_type;
 # Camera
 type camera_socket, file_type, data_file_type;
 
+# DT2W
+type dt2w_ctrl, fs_type, proc_type;
+
 # FM
 type sysfs_fm_lan, fs_type, sysfs_type;
 
