@@ -41,16 +41,11 @@
 #include "vendor_init.h"
 #include "property_service.h"
 
+#include "libinit_sdm439.h"
+
 using android::base::GetProperty;
 
-char const *heapstartsize;
-char const *heapgrowthlimit;
-char const *heapsize;
-char const *heapminfree;
-char const *heapmaxfree;
-char const *heaptargetutilization;
-
-void property_override(char const prop[], char const value[], bool add = true)
+void property_override(char const prop[], char const value[], bool add)
 {
     auto pi = (prop_info *) __system_property_find(prop);
 
@@ -61,9 +56,16 @@ void property_override(char const prop[], char const value[], bool add = true)
     }
 }
 
-void check_device()
+void set_dalvik_heap_size()
 {
     struct sysinfo sys;
+
+    char const *heapstartsize;
+    char const *heapgrowthlimit;
+    char const *heapsize;
+    char const *heapminfree;
+    char const *heapmaxfree;
+    char const *heaptargetutilization;
 
     sysinfo(&sys);
 
@@ -92,11 +94,6 @@ void check_device()
         heapminfree = "512k";
         heapmaxfree = "8m";
     }
-}
-
-void vendor_load_properties()
-{
-    check_device();
 
     property_override("dalvik.vm.heapstartsize", heapstartsize);
     property_override("dalvik.vm.heapgrowthlimit", heapgrowthlimit);

@@ -4,15 +4,19 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-cc_library_static {
-    name: "libinit_sdm439",
-    recovery_available: true,
-    srcs: ["init_sdm439.cpp"],
+cc_defaults {
+    name: "libinit_sdm439_defaults",
     include_dirs: [
         "system/core/base/include",
         "system/core/init"
     ],
-    shared_libs: [
-        "libbase",
-    ]
+    shared_libs: ["libbase"],
+    recovery_available: true,
+}
+
+cc_library_static {
+    name: "libinit_sdm439",
+    defaults: ["libinit_sdm439_defaults"],
+    srcs: ["libinit_sdm439.cpp"],
+    export_include_dirs: ["include"],
 }
