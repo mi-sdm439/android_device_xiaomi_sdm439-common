@@ -45,6 +45,15 @@
 
 using android::base::GetProperty;
 
+std::vector<std::string> ro_props_default_source_order = {
+    "odm.",
+    "product.",
+    "system.",
+    "system_ext.",
+    "vendor.",
+    "",
+};
+
 void property_override(char const prop[], char const value[], bool add)
 {
     auto pi = (prop_info *) __system_property_find(prop);
@@ -53,6 +62,19 @@ void property_override(char const prop[], char const value[], bool add)
         __system_property_update(pi, value, strlen(value));
     } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
+    }
+}
+
+void set_ro_build_prop(const std::string &prop, const std::string &value, bool product) {
+    std::string prop_name;
+
+    for (const auto &source : ro_props_default_source_order) {
+        if (product)
+            prop_name = "ro.product." + source + prop;
+        else
+            prop_name = "ro." + source + "build." + prop;
+
+        property_override(prop_name.c_str(), value.c_str(), true);
     }
 }
 
@@ -101,4 +123,15 @@ void set_dalvik_heap_size()
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+}
+
+void set_variant_props(const variant_info_t variant) {
+    set_ro_build_prop("brand", variant.brand, true);
+    set_ro_build_prop("device", variant.device, true);
+    set_ro_build_prop("marketname", variant.marketname, true);
+    set_ro_build_prop("model", variant.model, true);
+
+    set_ro_build_prop("fingerprint", variant.build_fingerprint);
+    property_override("ro.bootimage.build.fingerprint", variant.build_fingerprint.c_str());
+    property_override("ro.build.description", variant.build_description.c_str());
 }
