@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.huaqin.sarcontroller">
+        <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+    </privapp-permissions>
+</permissions>
