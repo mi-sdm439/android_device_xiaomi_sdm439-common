@@ -335,6 +335,10 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
+# Whitelisted app
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-huaqin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-huaqin.xml
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \

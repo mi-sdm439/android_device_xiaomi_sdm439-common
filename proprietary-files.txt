@@ -909,6 +909,9 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
+# Sar Controller - from olive
+-priv-app/SarControllerI/SarControllerI.apk
+
 # Sensors - from olive
 vendor/bin/sensors.qti|3bf3798e2e1d46b0b8964ec859afa81bd5a8d3fe
 vendor/lib64/hw/activity_recognition.msm8937.so|dfe3b07f7306f57c8ecf911bed7ce5e7cbb969b1

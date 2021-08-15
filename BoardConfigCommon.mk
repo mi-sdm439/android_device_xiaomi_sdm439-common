@@ -160,6 +160,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Treble
