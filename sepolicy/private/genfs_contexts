@@ -1,0 +1,2 @@
+# Proc
+genfscon proc /gpio_status u:object_r:proc_gpio_status:s0
