@@ -1,0 +1,2 @@
+# Proc
+type proc_gpio_status, fs_type, proc_type;
