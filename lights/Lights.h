@@ -24,9 +24,6 @@ namespace hardware {
 namespace light {
 
 enum led_type {
-    RED,
-    GREEN,
-    BLUE,
     WHITE,
 };
 

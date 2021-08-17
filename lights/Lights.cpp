@@ -30,9 +30,6 @@ namespace light {
 #define LED_PATH(led)                       "/sys/class/leds/" led "/"
 
 static const std::string led_paths[] {
-    [RED] = LED_PATH("red"),
-    [GREEN] = LED_PATH("green"),
-    [BLUE] = LED_PATH("blue"),
     [WHITE] = LED_PATH("white"),
 };
 
@@ -55,7 +52,7 @@ Lights::Lights() {
     mBacklightNode = !access(kLCDFile.c_str(), F_OK) ? kLCDFile : kLCDFile2;
     mButtonExists = !access(kButtonFile.c_str(), F_OK);
     mWhiteLed = !access((led_paths[WHITE] + "brightness").c_str(), W_OK);
-    mBreath = !access(((mWhiteLed ? led_paths[WHITE] : led_paths[RED]) + "breath").c_str(), W_OK);
+    mBreath = !access((led_paths[WHITE] + "breath").c_str(), W_OK);
 }
 
 // AIDL methods
@@ -93,22 +90,8 @@ ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
 
 // device methods
 void Lights::setSpeakerLightLocked(const HwLightState& state) {
-    uint32_t alpha, red, green, blue;
     uint32_t blink;
-    bool rc = true;
-
-    // Extract brightness from AARRGGBB
-    alpha = (state.color >> 24) & 0xFF;
-    red = (state.color >> 16) & 0xFF;
-    green = (state.color >> 8) & 0xFF;
-    blue = state.color & 0xFF;
-
-    // Scale RGB brightness if Alpha brightness is not 0xFF
-    if (alpha != 0xFF) {
-        red = (red * alpha) / 0xFF;
-        green = (green * alpha) / 0xFF;
-        blue = (blue * alpha) / 0xFF;
-    }
+    bool rc = false;
 
     blink = (state.flashOnMs != 0 && state.flashOffMs != 0);
 
@@ -117,13 +100,6 @@ void Lights::setSpeakerLightLocked(const HwLightState& state) {
         case FlashMode::TIMED:
             if (mWhiteLed) {
                 rc = setLedBreath(WHITE, blink);
-            } else {
-                if (!!red)
-                    rc = setLedBreath(RED, blink);
-                if (!!green)
-                    rc &= setLedBreath(GREEN, blink);
-                if (!!blue)
-                    rc &= setLedBreath(BLUE, blink);
             }
             if (rc)
                 break;
@@ -132,10 +108,6 @@ void Lights::setSpeakerLightLocked(const HwLightState& state) {
         default:
             if (mWhiteLed) {
                 rc = setLedBrightness(WHITE, RgbaToBrightness(state.color));
-            } else {
-                rc = setLedBrightness(RED, red);
-                rc &= setLedBrightness(GREEN, green);
-                rc &= setLedBrightness(BLUE, blue);
             }
             break;
     }
