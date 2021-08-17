@@ -30,7 +30,8 @@ namespace light {
 #define LED_PATH(led)                       "/sys/class/leds/" led "/"
 
 static const std::string led_paths[] {
-    [WHITE] = LED_PATH("white"),
+    // Red node represents white on pine
+    [WHITE] = LED_PATH("red"),
 };
 
 static const std::string kLCDFile = "/sys/class/leds/lcd-backlight/brightness";
