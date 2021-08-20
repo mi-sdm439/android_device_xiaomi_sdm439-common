@@ -409,10 +409,6 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8937.so
-vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8937.so
-
 # Gatekeeper HIDL - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
@@ -555,10 +551,6 @@ vendor/lib64/libkeymasterdeviceutils.so|784e8f3e6bb36214d171ba127454554049d140f5
 vendor/lib64/libkeymasterprovision.so|245fa13cad4dc81e66bc6fc3b7d20fa6c1afdefc
 vendor/lib64/libkeymasterutils.so|126096a6ce1ce50db8193a4617f1b1b0f6b3105c
 vendor/lib64/libqtikeymaster4.so|4fea65bc5cdfb2299100cbaeeb80984780b11a17
-
-# Keystore
-vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8937.so
-vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8937.so
 
 # Latency
 product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
