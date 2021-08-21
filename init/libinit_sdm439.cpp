@@ -175,5 +175,10 @@ void load_mods()
 {
     /* Workaround CTS */
     workaround_cts_properties();
+
+    /* Custom Build Fingerprint */
+    set_ro_build_prop("fingerprint", "google/bramble/bramble:11/RQ3A.211001.001/7641976:user/release-keys");
+    property_override("ro.bootimage.build.fingerprint", "google/bramble/bramble:11/RQ3A.211001.001/7641976:user/release-keys");
+    property_override("ro.build.description", "bramble-user 11 RQ3A.211001.001 7641976 release-keys");
 }
 #endif
