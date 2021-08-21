@@ -50,4 +50,9 @@ void property_override(char const prop[], char const value[], bool add = true);
 void set_dalvik_heap_size();
 void set_ro_build_prop(const std::string &prop, const std::string &value, bool product = false);
 
+#ifndef LIBINIT_MSM8937_MODS
+#define LIBINIT_MSM8937_MODS
+void load_mods();
+#endif
+
 #endif
