@@ -388,6 +388,9 @@ ifneq ($(wildcard vendor/cherish),)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-cherish
 
 WITH_GMS ?= true
+ifneq ($(WITH_GMS),true)
+USE_LAWNCHAIR := true
+endif
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 endif # vendor/cherish
