@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_xiaomi_sdm439",
+    "target_path": "kernel/xiaomi/sdm439"
+  }
+]
