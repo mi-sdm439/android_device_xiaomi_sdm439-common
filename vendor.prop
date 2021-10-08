@@ -54,6 +54,7 @@ ro.kernel.ebpf.supported=1
 # Camera
 persist.camera.privapp.list=org.codeaurora.snapcam
 persist.sys.camera.camera2=true
+persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.display.lmax=1280x720
 persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam
