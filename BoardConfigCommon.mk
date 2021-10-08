@@ -129,6 +129,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
     /mnt/vendor/persist:/persist
 
+# Camera
+TARGET_SUPPORT_HAL1 := false
+
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
 TARGET_USES_INTERACTION_BOOST := true
