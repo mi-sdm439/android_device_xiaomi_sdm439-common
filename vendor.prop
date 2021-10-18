@@ -175,5 +175,8 @@ vendor.service.qti.ims.enabled=1
 # Sensor
 ro.vendor.sensors.pseudo_gyro=true
 
+# System
+persist.sys.binary_xml=false
+
 # Time Services
 persist.timed.enable=true
