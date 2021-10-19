@@ -95,13 +95,13 @@ public final class DiracUtils {
             public void run() {
                 controller.dispatchMediaButtonEvent(evDownPlay);
             }
-        }, 1000);
+        }, 500);
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 controller.dispatchMediaButtonEvent(evUpPlay);
             }
-        }, 1020);
+        }, 520);
     }
 
     private int getMediaControllerPlaybackState(MediaController controller) {
