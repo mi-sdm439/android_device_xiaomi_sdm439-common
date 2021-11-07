@@ -105,7 +105,6 @@ vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 
 # Camera - from olive
-vendor/bin/mm-qcamera-app
 vendor/bin/mm-qjpeg-dec-test
 vendor/bin/mm-qjpeg-enc-test
 vendor/bin/mm-qomx-idec-test
@@ -132,7 +131,6 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/hw/camera.msm8937.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib/libcamera_scene.so
@@ -141,7 +139,6 @@ vendor/lib/libc++_shared.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_gpio.so
 vendor/lib/libflash_pmic.so
-vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -176,7 +173,6 @@ vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_irs1645.so
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
@@ -227,16 +223,12 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_westalgo_rtbokeh.so
-vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmjpeg.so
-vendor/lib/libmmlib2d_interface.so
-vendor/lib/libmm-qcamera.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmpbase.so
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
-vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
@@ -251,12 +243,6 @@ vendor/lib/libVDClearShot.so
 #vendor/lib/libwapi_cert.so
 #vendor/lib/libwa_rtdof.so
 vendor/lib/libXMFD_AgeGender.so
-
-# Camera HIDL - from olive
-vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/camera.device@3.2-impl.so
 
 # Camera firmware
 vendor/firmware/cpp_firmware_v1_10_0.fw
