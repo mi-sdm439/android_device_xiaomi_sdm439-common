@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "pine olives"
+write_headers "mi439 pine olives"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
