@@ -1,3 +1,8 @@
 allow init proc_boot_reason:file r_file_perms;
 allow init sysfs_fm_lan:file rw_file_perms;
 domain_auto_trans(init, vendor_charger_exec, vendor_charger)
+
+# Allow init bind mounting on vendor files
+allow init vendor_file:file mounton;
+allow init vendor_configs_file:dir mounton;
+allow init vendor_configs_file:file mounton;
