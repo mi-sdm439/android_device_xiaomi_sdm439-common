@@ -7,3 +7,8 @@ allow init firmware_file:filesystem getattr;
 
 # LED
 allow init sysfs_leds:lnk_file r_file_perms;
+
+# Allow init bind mounting on vendor files
+allow init vendor_file:file mounton;
+allow init vendor_configs_file:dir mounton;
+allow init vendor_configs_file:file mounton;
