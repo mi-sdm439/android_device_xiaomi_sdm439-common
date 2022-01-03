@@ -952,6 +952,3 @@ vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
-
-# Wi-Fi - from olive
-vendor/bin/wcnss_service|42d6db361ceacb15eb6560cdc91dbda87ab7f7c5
