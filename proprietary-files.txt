@@ -409,7 +409,7 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
-# Gatekeeper HIDL - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
+# Gatekeeper HIDL
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|b04d8ae5d3851f29fd8b7c8e034fa0ef04fb96f3
@@ -540,7 +540,7 @@ vendor/firmware/a530_pm4.fw
 # Ipacm
 vendor/bin/ipacm-diag
 
-# Keymaster - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
+# Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|13a894ea69abc056b754fa9e8f8e828ffd1de38c
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|e502c7046fb6a1955e54936d6c8f4f8c2889b201
 vendor/lib/libkeymasterdeviceutils.so|e3557fd2bc5d01de71b62e378dc51a2696a99768
@@ -696,7 +696,7 @@ vendor/res/charger/Battery_red1.png|e7dc9d0638e3405594f2129b85129efb345e4c19
 vendor/res/charger/Battery_red2.png|2f9716f028bff9ac6d44ec3eca1f5e06fa7d0e01
 vendor/res/charger/battery_scale.png|84066970c9fe65be5e5e752e225ce07698147a36
 
-# QC RIL - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
+# QC RIL
 vendor/bin/hw/qcrild|c0db5589a45874c31c0bb7e8a7151511505c1e04
 vendor/etc/init/qcrild.rc|f9c32f5e7a8e7f4a0df1dcce174de169b8d7c060
 vendor/lib64/libqcrilFramework.so|3d8f25d13533f6fa45a36b23feb250291b663370
@@ -742,7 +742,7 @@ vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
-# QTEE - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
+# QTEE
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|4d4f6f54c856ccdab0fbdda7a5064b24cf72fcd9
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|f3f5c4216b9a505affbe955a85a56bd39ca1ab74
