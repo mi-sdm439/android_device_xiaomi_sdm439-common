@@ -78,6 +78,9 @@ function blob_fixup() {
         vendor/lib64/libril-qc-hal-qmi.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc)
+            sed -i 's|3|4|g' "${2}"
+            ;;
     esac
 }
 
