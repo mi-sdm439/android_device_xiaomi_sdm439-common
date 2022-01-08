@@ -32,7 +32,7 @@ vendor/lib/rfsa/adsp/misound_karaokemix_res.bin|1b6114eeefa29e36f10571ae5dde4ba8
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin|eeda10edb9cf93d20cbe9a4ed77dd0eeef81efab
 vendor/lib/rfsa/adsp/misound_res.bin|f9b70e341815fb9c3ea9a0d3a248efd315389f9c
 
-# Audio
+# Audio - from olive
 vendor/bin/audioflacapp
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
