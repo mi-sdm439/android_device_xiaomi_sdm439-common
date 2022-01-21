@@ -108,6 +108,9 @@ LOC_HIDL_VERSION := 3.0
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
+# GRF/VF
+BOARD_SHIPPING_API_LEVEL := 30
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
