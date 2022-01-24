@@ -46,9 +46,6 @@ qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
 
-# Bpf
-ro.kernel.ebpf.supported=1
-
 # Camera
 persist.camera.privapp.list=org.codeaurora.snapcam
 persist.sys.camera.camera2=true
