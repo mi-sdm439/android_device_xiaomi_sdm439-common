@@ -1,3 +1,5 @@
 allow hal_camera_default camera_data_file:sock_file write;
 allow hal_camera_default huaqin_sysfs:dir r_dir_perms;
 allow hal_camera_default huaqin_sysfs:file r_file_perms;
+
+get_prop(hal_camera_default, bootanim_system_prop)
