@@ -386,6 +386,9 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sdm439-common/sdm439-common-vendor.mk)
 
+# ih8sn
+$(call inherit-product-if-exists, ih8sn/ih8sn.mk)
+
 # Inherit private extras
 USE_EXTRAS := true
 $(call inherit-product-if-exists, vendor/extras/product.mk)
