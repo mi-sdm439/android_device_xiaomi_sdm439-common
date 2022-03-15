@@ -661,10 +661,8 @@ vendor/lib64/libril-qc-hal-qmi.so|9f58de2abe6a3d67a341692c5870929a66f0b8b2
 vendor/lib64/qcrild_librilutils.so|c23470619690a34f7442fb6b26345de5dc4de880
 
 # QMI
-etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
-etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
 vendor/etc/sec_config
 vendor/lib/libdiag.so
@@ -718,7 +716,6 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|7bc3032b846e896c67dac44f41
 -product/app/embms/embms.apk
 product/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 product/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/embmslibrary.jar
