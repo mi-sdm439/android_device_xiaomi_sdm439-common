@@ -73,7 +73,6 @@ persist.vendor.cne.feature=1
 # DPM
 persist.vendor.dpm.feature=1
 persist.vendor.dpm.loglevel=0
-persist.vendor.dpmhalservice.enable=1
 
 # Display
 debug.egl.hw=0
