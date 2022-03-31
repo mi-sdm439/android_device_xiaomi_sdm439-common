@@ -20,18 +20,18 @@ vendor/lib64/libsdsprpc.so
 
 # ADSP modules - from olive
 vendor/lib/rfsa/adsp/dirac_resource.dar|cd71f1a846ae561eea40db9c2deee698d296e403
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
 vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
 vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|944169db3ac67056b92ef4f850f69346958370b5
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
-vendor/lib/rfsa/adsp/misound_karaokemix_res.bin|1b6114eeefa29e36f10571ae5dde4ba84625982c
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin|eeda10edb9cf93d20cbe9a4ed77dd0eeef81efab
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin|1b6114eeefa29e36f10571ae5dde4ba84625982c
 vendor/lib/rfsa/adsp/misound_res.bin|f9b70e341815fb9c3ea9a0d3a248efd315389f9c
 
 # Audio - from olive
@@ -64,8 +64,8 @@ vendor/lib64/libtinycompress_vendor.so
 
 # Audio dirac - from mido
 vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
-vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
 vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
 
 # Audiosphere
 etc/permissions/audiosphere.xml
@@ -101,54 +101,51 @@ vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 
 # Camera - from olive
-vendor/bin/mm-qjpeg-dec-test
-vendor/bin/mm-qjpeg-enc-test
-vendor/bin/mm-qomx-idec-test
-vendor/bin/mm-qomx-ienc-test
-#vendor/etc/westalgo/dof_model/cache_data
-#vendor/etc/westalgo/dof_model/megviisegment_model
-#vendor/etc/westalgo/dof_model/model_mdl_cache
 #vendor/etc/westalgo/dof_model/olivewood/cache_data
 #vendor/etc/westalgo/dof_model/olivewood/megviisegment_model
 #vendor/etc/westalgo/dof_model/olivewood/model_mdl_cache
+#vendor/etc/westalgo/dof_model/cache_data
+#vendor/etc/westalgo/dof_model/megviisegment_model
+#vendor/etc/westalgo/dof_model/model_mdl_cache
 #vendor/etc/westalgo/rt_model/mask/cache_data
 #vendor/etc/westalgo/rt_model/mask/megviisegment_model
 #vendor/etc/westalgo/rt_model/mask/model_mdl_cache
 #vendor/etc/westalgo/rt_model/score/cache_data
 #vendor/etc/westalgo/rt_model/score/megviisegment_model
 #vendor/etc/westalgo/rt_model/score/model_mdl_cache
-vendor/lib64/libmmcamera2_frame_algorithm.so
-vendor/lib64/libmmcamera2_is.so
-vendor/lib64/libmmcamera2_q3a_core.so
-vendor/lib64/libmmcamera2_stats_algorithm.so
-vendor/lib64/libmmcamera2_stats_lib.so
-vendor/lib64/libmmcamera_dbg.so
-vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libmmcamera_faceproc.so
-vendor/lib64/libmmcamera_tintless_algo.so
-vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
+#vendor/lib/libwa_dof.so
+#vendor/lib/libwa_megface.so
+#vendor/lib/libwa_rtdof.so
+#vendor/lib/libwapi_cert.so
+vendor/bin/mm-qjpeg-dec-test
+vendor/bin/mm-qjpeg-enc-test
+vendor/bin/mm-qomx-idec-test
+vendor/bin/mm-qomx-ienc-test
+vendor/lib/libSNPE.so
+vendor/lib/libVDClearShot.so
+vendor/lib/libXMFD_AgeGender.so
+vendor/lib/lib_lowlight.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_high_dynamic_range.so
+vendor/lib/libc++_shared.so
 vendor/lib/libcamera_scene.so
 vendor/lib/libcert_parse.wpa_s.so
-vendor/lib/libc++_shared.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_gpio.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/lib_lowlight.so
 vendor/lib/libmibokeh_439.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_mct_shimlayer.so
+vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
@@ -165,8 +162,8 @@ vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_irs1645.so
@@ -205,8 +202,8 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 vendor/lib/libmmcamera_paaf_lib.so
-vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_pdaf.so
+vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
@@ -216,8 +213,8 @@ vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_tuning.so
+vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_westalgo_rtbokeh.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
@@ -226,19 +223,22 @@ vendor/lib/libmpbase.so
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
+vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-vendor/lib/libSNPE.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
-vendor/lib/libVDClearShot.so
-#vendor/lib/libwa_dof.so
-#vendor/lib/libwa_megface.so
-#vendor/lib/libwapi_cert.so
-#vendor/lib/libwa_rtdof.so
-vendor/lib/libXMFD_AgeGender.so
+vendor/lib64/libmmcamera2_frame_algorithm.so
+vendor/lib64/libmmcamera2_is.so
+vendor/lib64/libmmcamera2_q3a_core.so
+vendor/lib64/libmmcamera2_stats_algorithm.so
+vendor/lib64/libmmcamera2_stats_lib.so
+vendor/lib64/libmmcamera_dbg.so
+vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc2.so
+vendor/lib64/libmmcamera_tintless_algo.so
+vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Camera firmware
 vendor/firmware/cpp_firmware_v1_10_0.fw
@@ -614,10 +614,10 @@ vendor/lib64/libqti-util.so
 
 # Perf configs - from olive
 vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/perf-profile0.conf
 vendor/etc/perf/perf-profile1.conf
+vendor/etc/perf/perfboostsconfig.xml
+vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
 
@@ -869,14 +869,14 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
 # Sensors - from olive
 vendor/bin/sensors.qti|3bf3798e2e1d46b0b8964ec859afa81bd5a8d3fe
-vendor/lib64/hw/activity_recognition.msm8937.so|dfe3b07f7306f57c8ecf911bed7ce5e7cbb969b1
-vendor/lib64/libsensor1.so|300b3245ae2f45f51cc27324572d84d36412ae64
-vendor/lib64/libsensor_reg.so|f5da84c560b96d48a2bbeb6f2f94bb66f0c7a467
-vendor/lib64/sensors.ssc.so|b55816be99793e02a2e75462fa92842679b401bd
 vendor/lib/hw/activity_recognition.msm8937.so|5c002529f8b9f1b1ee0b4f93216f03251c6ee849
 vendor/lib/libsensor1.so|0b321ef1824ce196eec15c51a10def26e092a895
 vendor/lib/libsensor_reg.so|4853605f7cb1cd01e997527b560e753cdfa47f11
 vendor/lib/sensors.ssc.so|b45c2bd8c0314088f8a0f22cb6fa39f9b2205bd0
+vendor/lib64/hw/activity_recognition.msm8937.so|dfe3b07f7306f57c8ecf911bed7ce5e7cbb969b1
+vendor/lib64/libsensor1.so|300b3245ae2f45f51cc27324572d84d36412ae64
+vendor/lib64/libsensor_reg.so|f5da84c560b96d48a2bbeb6f2f94bb66f0c7a467
+vendor/lib64/sensors.ssc.so|b55816be99793e02a2e75462fa92842679b401bd
 
 # Sensor configs - from olive
 vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
@@ -884,12 +884,12 @@ vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 # Thermal - from olive
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine-camera.conf
-vendor/etc/thermal-engine.conf
 vendor/etc/thermal-engine-high.conf
 vendor/etc/thermal-engine-map.conf
 vendor/etc/thermal-engine-nolimits.conf
 vendor/etc/thermal-engine-normal.conf
 vendor/etc/thermal-engine-sgame.conf
+vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
