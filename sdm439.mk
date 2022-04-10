@@ -419,3 +419,13 @@ $(call inherit-product-if-exists, ih8sn/ih8sn.mk)
 # Inherit private extras
 USE_EXTRAS := true
 $(call inherit-product-if-exists, vendor/extras/product.mk)
+
+# EXTRA: MiuiCamera
+ifneq ($(wildcard vendor/miuicamera/config.mk),)
+$(call inherit-product, vendor/miuicamera/config.mk)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/miuicam/pine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/pine.xml \
+    $(LOCAL_PATH)/configs/miuicam/olive.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/olive.xml \
+    $(LOCAL_PATH)/configs/miuicam/olive.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/olivelite.xml \
+    $(LOCAL_PATH)/configs/miuicam/olive.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/olivewood.xml
+endif
