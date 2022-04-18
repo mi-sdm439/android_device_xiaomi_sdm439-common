@@ -24,3 +24,9 @@ allow vendor_init {
   proc_dirty
   proc_dirty_ratio
 }:file w_file_perms;
+
+# Prop
+set_prop(vendor_init, camera_prop)
+set_prop(vendor_init, vendor_bservice_prop);
+set_prop(vendor_init, vendor_qcom_ims_prop);
+set_prop(vendor_init, vendor_video_prop);
