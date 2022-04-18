@@ -42,8 +42,6 @@ persist.vendor.audio.fluence.voicerec=false
 ro.vendor.audio.sdk.fluencetype=fluence
 
 # Bluetooth
-bluetooth.hfp.client=1
-persist.vendor.btstack.enable.splita2dp=false
 qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
@@ -63,9 +61,6 @@ vendor.camera.aux.packagelist1=com.huaqin.cameraautotest,com.xiaomi.cameratools,
 vendor.camera.aux.packagelist2=com.mi.AutoTest
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.qualcomm.qti.qmmi,com.huaqin.factory,com.westalgo.calibration
 vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk
-
-# Charger
-ro.charger.disable_init_blank=true
 
 # CNE
 persist.vendor.cne.feature=1
@@ -119,7 +114,6 @@ debug.stagefright.omx_default_rank=0
 media.aac_51_output_enabled=true
 media.msm8956hw=0
 media.stagefright.audio.sink=280
-vendor.mm.enable.qcom_parser=1048575
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 vendor.vidc.dec.downscalar_height=1088
@@ -164,7 +158,6 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 rild.libargs=-d /dev/smd0
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
-ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
 ro.telephony.iwlan_operation_mode=legacy
 service.qti.ims.enabled=1
