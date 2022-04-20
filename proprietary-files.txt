@@ -1,8 +1,7 @@
 # All unpinned blobs below are extracted from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
-# PAN Package version: Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002/00WW_3_240:user/release-keys
 # olive Package version: Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.1.0.QCNCNXM:user/release-keys
 # riva Package version: Xiaomi/riva/riva:8.1.0/OPM1.171019.026/V11.0.2.0.OCKMIXM:user/release-keys
-# umi Package version: Xiaomi/umi/umi:11/RKQ1.200826.002/V12.5.10.0.RJBCNXM:user/release-keys
+# sweet Package version: Redmi/sweet_global/sweet:12/SKQ1.210908.001/V13.0.3.0.SKFMIXM:user/release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -829,12 +828,10 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Radio - IMS - from PAN
-system_ext/lib64/libimscamera_jni.so
-
-# Radio - IMS - from umi
+# Radio - IMS - from sweet
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvtutils.so
+system_ext/lib64/libimscamera_jni.so
 
 # Sar Controller - from olive
 -system/priv-app/SarControllerI/SarControllerI.apk
