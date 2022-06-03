@@ -534,3 +534,8 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
+
+on boot
+    enable vendor.qcrild
+    enable vendor.qcrild2
+    stop vendor.qcrild3
